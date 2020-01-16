@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#all-input {
+    grid-area: all-input;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    background-color: #999;
+    color: white;
+    padding-right: 5px;
+    overflow: hidden;
+    text-align: right;
+}
+
+#current-input {
+    grid-area: current-input;
+    height: 80px;
+    font-size: 50px;
+    line-height: 80px;
+    background-color: #999;
+    color: white;
+    padding-right: 5px;
+    /*overflow-x: auto;*/
+    overflow: hidden;
+    text-align: right;
+}
+
+
+#clear {
+    grid-area: clear;
+}
+#del {
+    grid-area: del;
+}
+#plus-minus {
+    grid-area: plus-minus;
+}
+#zero {
+    grid-area: zero;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#decimal {
+    grid-area: decimal;
+}
+#add {
+    grid-area: add;
+}
+#subtract {
+    grid-area: subtract;
+}
+#multiply {
+    grid-area: multiply;
+}
+#divide {
+    grid-area: divide;
+}
+#equals {
+    grid-area: equals;
+}
+
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+            "all-input all-input all-input all-input"
+            "current-input current-input current-input current-input"
+            "clear del plus-minus add"
+            "seven eight nine subtract"
+            "four five six multiply"
+            "one two three divide"
+            "zero zero decimal equals";
+    border: 3px solid #999;
+    padding: 10px;
+    padding-bottom: 20px;
+    background: #e0e0e7;
+}
+
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
